@@ -17,13 +17,13 @@ object Sender {
         context: Context, senderMail: String,
         senderPassword: String, displayName: String,
         receiverMail: String, subject: String,
-        body: String, funToExecAfterSent: ()-> Unit
+        body: String, funToExecAfterSent: () -> Unit
     ) {
         val properties = System.getProperties()
-        properties["mail.smtp.host"] = "smtp.gmail.com"
-        properties["mail.smtp,port"] = "465"
-        properties["mail.smtp.ssl.enable"] = "true"
-        properties["mail.smtp.auth"] = "true"
+        properties[CONSTATNS.HOST] = CONSTATNS.HOST_VALUE
+        properties[CONSTATNS.PORT] = CONSTATNS.PORT_NUMBER
+        properties[CONSTATNS.SSL] = CONSTATNS.TRUE
+        properties[CONSTATNS.AUTH] = CONSTATNS.TRUE
 
         val session = Session.getInstance(properties, object : Authenticator() {
             override fun getPasswordAuthentication(): PasswordAuthentication {
@@ -45,12 +45,12 @@ object Sender {
                     funToExecAfterSent()
                 } catch (e: MessagingException) {
                     e.printStackTrace()
-                    Toast.makeText(context,e.message,Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, e.message, Toast.LENGTH_SHORT).show()
                 }
             }
             thread.start()
         } catch (ex: Exception) {
-            Toast.makeText(context,"Email sent successfully",Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, ex.message, Toast.LENGTH_SHORT).show()
         }
     }
 }
