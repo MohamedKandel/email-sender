@@ -1,5 +1,5 @@
 ![Static Badge](https://img.shields.io/badge/Android-green)
-![Static Badge](https://img.shields.io/badge/Kotlin-green)
+![Static Badge](https://img.shields.io/badge/Kotlin-mauve)
 ![Static Badge](https://img.shields.io/badge/latest%20release:-1.2.1-red)
 ![Static Badge](https://img.shields.io/badge/jitpackio-black)
 # Email Sender
