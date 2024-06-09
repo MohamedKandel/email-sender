@@ -87,6 +87,9 @@ you can use this method as follow:-
 val otp = Sender.sendOTP(this, senderMail, senderPassword, name, 6, receiver) {}
 Log.v("OTP is : ",otp)
 ```
+## compatible sdks
+this library is compatible from API 24 (Android 7) till API 34 (Android 14)<br>
+## Note
 please note that this library is built for educational porpuse only because it works nativly on android only, so if you are building an application for android and IOS you should use API for doing this.<br>
 this library is developed by ***Mohamed Kandeel*** if you have any suggestions to improve this library or any methods match your educational needs you can contact developer via his [email](mailto:mohamed.hossam7799@gmail.com)<br>
 Thanks for using our library
