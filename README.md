@@ -1,3 +1,11 @@
+![Static Badge](https://img.shields.io/badge/Android-green) 
+![Static Badge](https://img.shields.io/badge/Kotlin-mauve)
+![Static Badge](https://img.shields.io/badge/latest%20release:-1.2.1-red)
+![Static Badge](https://img.shields.io/badge/jitpackio-black)
+[![HitCount](https://hits.dwyl.com/MohamedKandel/email-sender.svg?style=flat)](http://hits.dwyl.com/MohamedKandel/email-sender)
+
+
+
 ## Email Sender: Effortlessly Send Emails and Verification Codes in Your Android App
 
 This developer-friendly library simplifies sending emails and verification codes (OTPs) directly from your Android project. It utilizes the well-known Simple Mail Transfer Protocol (SMTP) for reliable email delivery.
