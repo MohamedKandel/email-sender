@@ -13,7 +13,7 @@ This developer-friendly library simplifies sending emails and verification codes
 Key Features:
 
  - Effortless Integration: Add the library to your project with just a few lines in your gradle files.
- - Secure Email Sending: Send emails from any Gmail account with proper security measures in place. (Important: Don't forget to follow the instructions from link to enable SMTP on your sender Gmail account.)
+ - Secure Email Sending: Send emails from any Gmail account with proper security measures in place. (Important: Don't forget to follow the instructions from [link](https://www.gmass.co/blog/gmail-smtp) to enable SMTP on your sender Gmail account.)
  - Flexible Functionality: Choose between sending regular emails or generating OTPs for verification purposes.
 
 # Getting Started:
