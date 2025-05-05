@@ -1,13 +1,13 @@
 ![Static Badge](https://img.shields.io/badge/Android-green) 
 ![Static Badge](https://img.shields.io/badge/Kotlin-mauve)
-![Static Badge](https://img.shields.io/badge/latest%20release:-1.2.1-red)
+![Static Badge](https://img.shields.io/badge/latest%20release:-1.3.0-red)
 ![Static Badge](https://img.shields.io/badge/jitpackio-black)
 
 
 
 ## Email Sender: Effortlessly Send Emails and Verification Codes in Your Android App
 
-This developer-friendly library simplifies sending emails and verification codes (OTPs) directly from your Android project. It utilizes the well-known Simple Mail Transfer Protocol (SMTP) for reliable email delivery.
+This developer-friendly library simplifies sending emails with attachment file or without attachments and verification codes (OTPs) directly from your Android project. It utilizes the well-known Simple Mail Transfer Protocol (SMTP) for reliable email delivery.
 
 Key Features:
 
@@ -49,9 +49,13 @@ The library provides two convenient methods for sending emails and generating OT
 
  - ```sendEmail(context, senderMail, senderPassword, displayName, receiverMail, subject, body, funToExecAfterSent)```<br/>
    This method allows you to send emails with customizable sender details, subject, body, and a callback function for post-sending actions.<br/>
+ - ```sendEmailAttach(senderMail,senderPassword,displayName,receiverMail,subject,bodyText,attachmentPath,funToExecAfterSent) send email with attachment```<br/>
  - ```sendOTP(context, senderMail, senderPassword, displayName, OTPLength, receiverMail, funToExecAfterSent)```<br/> Generate OTP codes with this method. Specify the desired OTP length and receive the generated code as a String.
 
-    Remember: Always use a secure, encrypted password for senderPassword.
+# Remember:
+ - Always use a secure, encrypted password for senderPassword.
+ - handle all cases to get path of selected file (not uri) to send file path to function which attach file and if you get wrong path for file email won't send, get it from cache directory.
+ - if you used FileHelper class don't forget to check if any deprecation and handle it with your own way.
 
 # Compatibility:
 
