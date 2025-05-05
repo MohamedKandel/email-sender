@@ -49,7 +49,7 @@ The library provides two convenient methods for sending emails and generating OT
 
  - ```sendEmail(context, senderMail, senderPassword, displayName, receiverMail, subject, body, funToExecAfterSent)```<br/>
    This method allows you to send emails with customizable sender details, subject, body, and a callback function for post-sending actions.<br/>
- - ```sendEmailAttach(senderMail,senderPassword,displayName,receiverMail,subject,bodyText,attachmentPath,funToExecAfterSent) send email with attachment```<br/>
+ - ```sendEmailAttach(senderMail,senderPassword,displayName,receiverMail,subject,bodyText,attachmentPath,funToExecAfterSent)``` send email with attachment<br/>
  - ```sendOTP(context, senderMail, senderPassword, displayName, OTPLength, receiverMail, funToExecAfterSent)```<br/> Generate OTP codes with this method. Specify the desired OTP length and receive the generated code as a String.
 
 # Remember:
